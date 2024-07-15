@@ -31,7 +31,7 @@ def get_old_files(num_days:int):
 
 def delete_files(files:list):
     for file in files:
-        os.remove(file)
+        os.remove(file.path)
 
 if __name__=="__main__":
     if len(sys.argv) != 1:
